@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Ödevi</title>
+    <style> 
+h1/* başlık renklendirmek için açtım*/
+  {
+    color: #0f0e0e; 
+    text-align: center; /* Yazıyı ortalamak için !!!!!!!!!!!!! */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+table 
+  {
+    width:70%;
+    border-collapse:separate;
+    margin:auto; /*Tabloyu ortalamak için*/
+   }
+
+thead tr /*Başlık satırına arka plan renk ekledim*/
+  {
+    background-color: #8ee4d0; 
+    color: rgb(91, 13, 235); 
+    font-weight: bold; 
+  }
+tbody tr /*Veri kısmına arka plan renk ekledim*/
+  {
+    background-color: rgb(189, 174, 239); /* Başlık arka plan rengi */
+    color: rgb(201, 28, 210); 
+    font-weight: bold; 
+  }
+        
+  th, td 
+  {
+    padding: 20px; /*tabloyu genişletiyor*/
+    text-align:center; /*tablo içi yazıları ortaladım*/
+    border: 3px solid #10053c;
+  }
+
+  tbody tr:nth-child(2) td:nth-child(3) /*İkinci satırdaki üçüncü hücreyi sadece değiştirdim. */
+  {
+    color: #020202; 
+    font-weight: bold; 
+  }
+
+    </style>
+</head>
+<body>
+<h1>TABLE</h1>
+<div>
+    <table border="2">  <!--border tabloya kenar çubuğu ekler-->
+        <thead> <!--tablonun başlık kısmını içeriyor-->
+            <tr> <!--Her bir satırı temsil eder-->
+            <th>İsim</th><!--th yazdıklarımız sütunu temsil ediyor-->
+            <th>Yaş</th>
+            <th>Şehir</th>
+            <th>Meslek</th>
+            </tr>
+        </thead>
+
+        <tbody> <!--Tablonun ana içeriğini (veri satırlarını) içerir.-->
+         <tr>
+            <td>Aylin</td> <!--Td veri hücrelerini tanımlıyor-->
+            <td>25</td>
+            <td>İstanbul</td>
+            <td>Bankacı</td>
+        </tr>
+        <tr>
+            <td>Ceylan</td>
+            <td>30</td>
+            <td>Ankara</td>
+            <td>Mühendis</td>
+        </tr>
+        <tr>
+            <td>Elif</td>
+            <td>22</td>
+            <td>İzmir</td>
+            <td>Ögrenci</td>
+        </tr>  
+        </tbody>
+
+    </table>
+</div>
+    
+
+</body>
+</html>
